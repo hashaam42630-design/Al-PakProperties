@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  --text: #64748b;
+  --text-h: #0f172a;
+  --bg: #f8fafc; /* Light slate background */
+  --border: #e2e8f0;
+  
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* This forces light mode even if the user's system is set to dark */
+  color-scheme: light; 
+  color: var(--text);
+  background-color: var(--bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: initial;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  /* Removed fixed width and borders to make it full screen */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left; /* Changed from center to left for a standard look */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-h);
+  margin: 0;
+}
+
+/* Optional: Smooth transitions for hover effects */
+a {
+  transition: all 0.3s;
+}
